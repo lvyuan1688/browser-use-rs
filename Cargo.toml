@@ -1,0 +1,31 @@
+[package]
+name = "browser-use-rs"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["lvyuan1688"]
+description = "Give any LLM the ability to control a web browser — in Rust. Inspired by Browser Use."
+repository = "https://github.com/lvyuan1688/browser-use-rs"
+keywords = ["ai", "agent", "browser", "playwright", "automation"]
+categories = ["command-line-utilities", "web-programming"]
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+async-trait = "0.1"
+clap = { version = "4", features = ["derive"] }
+ratatui = "0.28"
+crossterm = "0.28"
+# Browser backends (TODO: choose one)
+# playwright-rust = "0.1"   # if exists
+# chromiumoxide = "0.6"     # CDP direct
+
+[workspace]
+members = [
+    "crates/browser-core",
+    "crates/agent-loop",
+    "crates/compress",
+    "replay-ui",
+]
