@@ -1,0 +1,15 @@
+[package]
+name = "replay-ui"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Replay UI for browser-use-rs — step through recorded sessions"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+ratatui = "0.28"
+crossterm = "0.28"
+agent-loop = { path = "../agent-loop" }

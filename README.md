@@ -1,5 +1,7 @@
 # browser-use-rs
 
+![Demo](docs/demo.png)
+
 > Give any LLM the ability to control a web browser — in Rust.
 > Inspired by [Browser Use](https://github.com/browser-use/browser-use) (86k+ stars), rewritten from scratch in Rust with dual mode (DOM + Vision) and built-in trajectory replay.
 
