@@ -1,0 +1,12 @@
+[package]
+name = "selector-cache"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "TTL-based CSS selector cache for browser-use-rs"
+
+[dependencies]
+browser-core = { path = "../browser-core" }
+tokio = { version = "1", features = ["time", "sync", "macros"] }
+async-trait = "0.1"
+anyhow = "1"

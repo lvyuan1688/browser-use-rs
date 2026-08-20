@@ -28,6 +28,7 @@ members = [
     "crates/agent-loop",
     "crates/compress",
     "crates/action-replay",
+    "crates/selector-cache",
     "replay-ui",
     "crates/vision-mod",
 ]
