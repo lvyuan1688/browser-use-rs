@@ -29,6 +29,7 @@ members = [
     "crates/compress",
     "crates/action-replay",
     "crates/selector-cache",
+    "crates/dom-snapshot",
     "replay-ui",
     "crates/vision-mod",
 ]
